@@ -5,6 +5,15 @@
 </p>
 
 <p align="center">
+  <em>🇺🇸 A web app (PWA) that tracks garbage trucks in real time in downtown Belém, Brazil —
+  built with Vue 3 and Vite, with a hand-drawn SVG map and offline support.</em>
+</p>
+
+<p align="center">
+  <a href="https://trashtime.vercel.app"><img src="https://img.shields.io/badge/%E2%96%B6_Abrir_o_app-trashtime.vercel.app-14532D?style=for-the-badge" alt="Abrir o app: trashtime.vercel.app" /></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Vue_3-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue 3" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
@@ -61,15 +70,22 @@ Projeto desenvolvido para uma apresentação na faculdade.
 
 ## 📸 Telas
 
-<!-- Coloque os prints em docs/prints/ e ajuste os nomes abaixo -->
+**No celular**
 
 | Mapa | Calendário | Avisos | Configurações |
 |:---:|:---:|:---:|:---:|
-| ![Tela do mapa](docs/prints/mapa.png) | ![Tela do calendário](docs/prints/calendario.png) | ![Tela de avisos](docs/prints/avisos.png) | ![Tela de configurações](docs/prints/configuracoes.png) |
+| ![Tela do mapa: caminhões no mapa de Belém, com a rota já percorrida, a prevista e a que falta](docs/prints/mapa.png) | ![Tela do calendário: dias de coleta comum e seletiva do mês](docs/prints/calendario.png) | ![Tela de avisos: caminhão se aproximando, mudança de horário e comunicados](docs/prints/avisos.png) | ![Tela de configurações: região, endereço e aparência](docs/prints/configuracoes.png) |
+
+**No computador** — tema claro e modo escuro
 
 <p align="center">
-  <img src="docs/prints/desktop.png" width="80%" alt="Layout de computador" />
+  <img src="docs/prints/desktop.png" width="80%" alt="Layout de computador no tema claro: menu lateral, mapa com os caminhões e as próximas coletas" />
 </p>
+<p align="center">
+  <img src="docs/prints/desktop-escuro.png" width="80%" alt="Layout de computador no modo escuro" />
+</p>
+
+> Experimente ao vivo em **[trashtime.vercel.app](https://trashtime.vercel.app)** — no celular, dá para instalar como app.
 
 ## 🚀 Como instalar e rodar
 
@@ -109,6 +125,8 @@ por uma projeção que leva cada ponto do espaço às duas coordenadas do desenh
 
 ```
 index.html            entrada: o Vite injeta o app aqui
+servir.sh             gera o build e o serve, para testar como fica publicado
+prototipos/           protótipos de design das quatro telas (referência, fora do build)
 public/               copiado sem alteração para dist/
   manifest.json         torna o app instalável
   sw.js                 service worker: faz o app abrir sem internet
