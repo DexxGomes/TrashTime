@@ -1,5 +1,5 @@
 # Protótipos de design (canvas com as quatro telas) e a página de apresentação
 # gerada a partir deles. São material de referência, não o código do app:
-# ficam fora da contagem de linguagens do GitHub, que assim mostra o projeto
-# como Vue em vez de HTML.
+# ficam fora da contagem de linguagens do GitHub, que assim mostra o código de
+# verdade (JavaScript e Vue) em vez dos 2 MB de HTML dos protótipos.
 prototipos/** linguist-documentation
